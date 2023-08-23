@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+    background: linear-gradient(45deg, red, blue);
+    align-items: center;
+}
+
+
+.box{
+    display: grid;
+    width: 30%;
+    height: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color:white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2rem;
+}
+
+.element{
+    border: 1px solid #faf7f2;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-heading{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 10px 30px;
+    background: transparent;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+}
+
+.footer{
+    margin-bottom: 30px;
+}
+
+.footer > button{
+    padding: 10px 30px;
+    font-weight: 400;
+    font-size: large;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* display: none; */
+
+}
+
+
+
+.footer > button :hover{
+    cursor: pointer;
+}
+
+.border-left-zero{
+    border-left: 0px;
+}
+.border-top-zero{
+    border-top: 0px;
+}
+.border-bottom-zero{
+    border-bottom: 0px;
+}
+
+.border-right-zero{
+    border-right: 0px;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    gap: 38px;
+    width: 100vw;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-gif img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+@media (max-width: 425px) {
+    .box{
+        height: 70%;
+        width: 60%;
+    }
+    .img-gif img{
+        display: none;
+    }
+}
+
+@media (min-width:426px) and (max-width: 768px) {
+    .box{
+        width:45%;
+        height: 90%;
+    }
+    .img-gif img{
+        display: none;
+    }
+}
+
+#line{
+    visibility: hidden;
+    position: absolute;
+    width: 298px;
+    height: 0px;
+}
